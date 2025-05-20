@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/ubicacion.css">
+
+    <title>Ubicación</title>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand text" href="index.html"> <b>KodachiSushi</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../html/ubicacion.html">Ubicación</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../html/carrito.html">Carrito</a>
+                </li> 
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+
+          </div>
+          
+        </div>
+      </nav>
+          <!--fin-navbar-->
+
+
+
+
+
+        <div class="card mt-5">
+        <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dónde nos ubicamos</h4>
+                <div id="mapa" style="height: 500px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOJFUWe9BC3O024c5ai4lD2QDAe38nGpM&callback=mostrarMapa"async defer></script>
+</body>
+
+<br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="footer-container">
+          <p>&copy; 2025 KodachiSushi. Todos los derechos reservados.</p>
+      
+          <div class="social-icons">
+            <a href="https://instagram.com/turestaurante" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/turestaurante" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/56912345678" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+    </footer>
+
+  <script src="../js/ubicación.js"></script>
+
+</html>
