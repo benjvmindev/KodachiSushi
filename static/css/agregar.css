@@ -1,20 +1,5 @@
-
-.navbar{
-    background-color: transparent !important;
-}
-
-/* Cambiar el color de los enlaces del navbar */
-.navbar .nav-link {
-    color: #000000 !important; /* Blanco */
-  }
-
-/* Cambiar el color al pasar el mouse por encima */
-.navbar .nav-link:hover {
-    color: #000000 !important; /* Gris claro */
-  }
-
-.navbar .form-control{
-    outline: #000000;
+.card{
+    justify-content: center;
 }
 
 body {

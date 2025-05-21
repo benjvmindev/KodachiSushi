@@ -22,5 +22,9 @@ def ubicacion():
 def admin():
     return render_template('admin.html')
 
+@app.route('/agregar')
+def agregar():
+    return render_template('agregar.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
