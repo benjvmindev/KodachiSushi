@@ -25,19 +25,16 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('index')}}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Menú</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for('nosotros')}}">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../html/ubicacion.html">Ubicación</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('ubicacion')}}">Ubicación</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../html/carrito.html">Carrito</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('carrito')}}">Carrito</a>
                 </li> 
 
             </ul>
@@ -65,7 +62,7 @@
 
     <div class="col">
       <div class="card h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalSushi1">
-        <img src="../img/sushi1.jpg" class="card-img-top" alt="...">
+        <img src="{{url_for ('static', filename='img/sushi1.jpg')}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Sushi de camarón</h5>
           <p class="card-text">¡Elige tu sushi favorito!</p>
@@ -75,7 +72,7 @@
 
     <div class="col">
       <div class="card h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalSushi1">
-        <img src="../img/sushi1.jpg" class="card-img-top" alt="...">
+        <img src="{{url_for ('static', filename='img/sushi1.jpg')}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Sushi de camarón</h5>
           <p class="card-text">¡Elige tu sushi favorito!</p>
@@ -83,9 +80,9 @@
       </div>
     </div>
 
-        <div class="col">
+    <div class="col">
       <div class="card h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalSushi1">
-        <img src="../img/sushi1.jpg" class="card-img-top" alt="...">
+        <img src="{{url_for ('static', filename='img/sushi1.jpg')}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Sushi de camarón</h5>
           <p class="card-text">¡Elige tu sushi favorito!</p>
@@ -93,9 +90,9 @@
       </div>
     </div>
 
-        <div class="col">
+    <div class="col">
       <div class="card h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalSushi1">
-        <img src="../img/sushi1.jpg" class="card-img-top" alt="...">
+        <img src="{{url_for ('static', filename='img/sushi1.jpg')}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Sushi de camarón</h5>
           <p class="card-text">¡Elige tu sushi favorito!</p>
@@ -115,7 +112,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
       <div class="modal-body">
-        <img src="../img/sushi1.jpg" class="img-fluid mb-3" alt="..."  style="max-height:180px; object-fit:cover; width:100%;">
+        <img src="{{url_for ('static', filename='img/sushi1.jpg')}}" class="img-fluid mb-3" alt="..."  style="max-height:180px; object-fit:cover; width:100%;">
 
         <div class="option-group mx-auto">
           <h5>Elige tu arroz (Elige 1)</h5>
@@ -138,7 +135,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <a href="{{url_for }}" class="btn btn-success">Agregar al carrito por: $5.990</a>
+        <a href="{{url_for ('carrito')}}" class="btn btn-success">Agregar al carrito por: $5.990</a>
       </div>
     </div>
   </div>

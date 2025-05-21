@@ -20,19 +20,16 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('index')}}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Menú</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for('nosotros')}}">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../html/ubicacion.html">Ubicación</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('ubicacion')}}">Ubicación</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../html/carrito.html">Carrito</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for ('carrito')}}">Carrito</a>
                 </li> 
 
             </ul>
