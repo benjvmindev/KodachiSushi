@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
   display: flex;
   margin: 0;
+  background-image: url('../img/fondo-admin.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .sidebar {

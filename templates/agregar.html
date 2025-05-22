@@ -12,17 +12,17 @@
     
   <!-- Sidebar -->
   <div class="sidebar d-flex flex-column">
-    <h4 class="text-center mb-4">Panel Admin</h4>
-    <a href="/admin/productos">📦 Ver Productos</a>
+    <h4 class="text-center mb-4">Kodashiadmin</h4>
+    <a href="{{url_for ('verProducto')}}">📦 Ver Productos</a>
     <a href="{{url_for ('agregar')}}">➕ Agregar Producto</a>
-    <a href="/admin/pedidos">📋 Ver Pedidos</a>
+    <a href="/{{url_for ('verPedido')}}">📋 Ver Pedidos</a>
     <a href="/logout">🔓 Cerrar Sesión</a>
   </div>
 
 
   <!-- Main Content -->
   <div class="main-content d-flex justify-content-center align-items-center min-vh-100">
-    <div class="card shadow" style="width: 30rem;">
+    <div class="card shadow rounded-4 " style="width: 30rem;">
       <div class="card-body">
         <h5 class="card-title mb-4">Agregar Producto</h5>
         <form action="/admin/agregar" method="POST">
@@ -38,6 +38,10 @@
             <label for="precio" class="form-label">Precio</label>
             <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
           </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Imagen</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
           <button type="submit" class="btn btn-success">Agregar</button>
         </form>
       </div>

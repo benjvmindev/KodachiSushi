@@ -26,5 +26,13 @@ def admin():
 def agregar():
     return render_template('agregar.html')
 
+@app.route('/verProducto')
+def verProducto():
+    return render_template('verProducto.html')
+
+@app.route('/verPedido')
+def verPedido():
+    return render_template('verPedido.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
