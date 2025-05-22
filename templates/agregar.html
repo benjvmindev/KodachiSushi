@@ -15,7 +15,7 @@
     <h4 class="text-center mb-4">Kodashiadmin</h4>
     <a href="{{url_for ('verProducto')}}">📦 Ver Productos</a>
     <a href="{{url_for ('agregar')}}">➕ Agregar Producto</a>
-    <a href="/{{url_for ('verPedido')}}">📋 Ver Pedidos</a>
+    <a href="{{url_for ('verPedido')}}">📋 Ver Pedidos</a>
     <a href="/logout">🔓 Cerrar Sesión</a>
   </div>
 
@@ -37,6 +37,10 @@
           <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
             <input type="number" class="form-control" id="precio" name="precio" step="0.01" required>
+          </div>
+            <div class="mb-3">
+            <label for="precio" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="stock" name="stock" step="0.01" required>
           </div>
           <div class="mb-3">
             <label for="formFile" class="form-label">Imagen</label>

@@ -34,5 +34,9 @@ def verProducto():
 def verPedido():
     return render_template('verPedido.html')
 
+@app.route('/indexadmin')
+def indexadmin():
+    return render_template('indexadmin.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

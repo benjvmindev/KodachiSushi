@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,47 @@
     <a href="{{url_for ('agregar')}}">➕ Agregar Producto</a>
     <a href="{{url_for ('verPedido')}}">📋 Ver Pedidos</a>
     <a href="/logout">🔓 Cerrar Sesión</a>
+  </div>
+
+    <div class="container">
+  <!-- Main Content -->
+  <div class="main-content d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow rounded-4 " style="width: 70rem;">
+      <div class="card-body">
+        <h5 class="card-title mb-4 text-center">Pedidos</h5>
+        
+        <table class="table">
+            <thead>
+                <th scope="col">id</th>
+                <th scope="col">CLiente</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Referenica</th>
+                <th scope="col">Tipo de pago</th>
+                <th scope="col">Delivery</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Pedro Peréz</td>
+                  <td>962807643</td>
+                  <td>Los alerces 2</td>
+                  <td>p.peréz@gmail.com</td>
+                  <td>Al lado de un parque</td>
+                  <td>Efectivo</td>
+                  <td>Si</td>
+                  <td>
+                    <button class="btn btn-sm btn-danger px-1" title="eliminar">Cancelar</button>
+                  </td>
+                </tr>
+              </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
   </div>
 
 </body>
